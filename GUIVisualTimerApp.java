@@ -9,6 +9,7 @@ import java.util.Calendar;
 /**
  * Класс GUIVisualTimerApp наследует JFrame, что делает его окном верхнего уровня.
  */
+//что-то пишу
 public class GUIVisualTimerApp extends JFrame {
 
     // метки для отображения статуса каждого таймера.
