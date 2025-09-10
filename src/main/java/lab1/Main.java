@@ -1,6 +1,5 @@
 package lab1;
 
-import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.util.Calendar;
 import java.util.Date;
@@ -23,7 +22,6 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-    private final SimpleDateFormat timeFormat = new SimpleDateFormat("HH:mm:ss");
     private Timer timer;
 
     private TextField delayField;
