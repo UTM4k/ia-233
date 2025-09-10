@@ -238,7 +238,7 @@ public class TimerFXApp extends Application {
             System.out.println("Периодический таймер остановлен при выходе из приложения.");
         }
     }
-
+// hhdskjgl;hjjtykuliyutrewrtyu
     public static void main(String[] args) {
         launch(args);
     }
