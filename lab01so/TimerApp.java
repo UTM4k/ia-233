@@ -26,7 +26,7 @@ public class TimerApp {
         private Integer targetHHmm = null;
 
         private volatile boolean running = false;
-        private ScheduledFuture<?> future;
+                private ScheduledFuture<?> future;
 
         private final ScheduledExecutorService scheduler =
                 Executors.newSingleThreadScheduledExecutor();
@@ -171,7 +171,7 @@ public class TimerApp {
         }
     }
 
-    // Панель одного таймера
+
     static class TimerPanel extends JPanel {
         private final TimerModel model;
         private final JLabel label;
