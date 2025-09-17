@@ -1,3 +1,4 @@
+#proverka
 import threading
 import datetime
 import tkinter as tk
