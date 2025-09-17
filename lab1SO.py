@@ -4,7 +4,7 @@ import tkinter as tk
 from tkinter import messagebox
 import winsound
 
-# ---------------- Таймеры ----------------
+# Таймеры
 class TimerTask:
     def __init__(self, action):
         self.action = action
@@ -33,7 +33,7 @@ class Timer:
         threading.Timer(period, wrapper).start()
 
 
-# ---------------- Общие функции ----------------
+# Общие функции
 timer = Timer()
 
 def add_clock(label):
@@ -152,7 +152,7 @@ def start_timer3_window():
     win3.protocol("WM_DELETE_WINDOW", on_close)
 
 
-# ---------------- Главное окно ----------------
+# Главное окно
 root = tk.Tk()
 root.title("Выбор таймера")
 root.geometry("600x400")
