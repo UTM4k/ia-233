@@ -22,7 +22,7 @@ public class TimerApp {
         private final TimerType type;
         private int seconds;
         private int intervalMax = 0;
-        private int intervalCycles = 0;           // NEW: счётчик завершённых интервалов
+        private int intervalCycles = 0;
         private Integer targetHHmm = null;
 
         private volatile boolean running = false;
@@ -31,10 +31,10 @@ public class TimerApp {
         private final ScheduledExecutorService scheduler =
                 Executors.newSingleThreadScheduledExecutor();
 
-        private TimerListener listener;           // NEW: слушатель событий
+        private TimerListener listener;
 
-        // Настройка “ивентов”
-        private int colorPulsePeriodSec = 5;      // STANDARD: раз в 5 секунд
+
+        private int colorPulsePeriodSec = 5;
 
         TimerModel(TimerType type) {
             this.type = type;
@@ -53,12 +53,12 @@ public class TimerApp {
             if (running) return;
             running = true;
 
-            // Если таргетный — пересчёт оставшегося времени
+
             if (type == TimerType.TARGET && targetHHmm != null) {
                 seconds = computeSecondsUntil(targetHHmm);
             }
 
-            // Планируем свой поток для таймера
+
             future = scheduler.scheduleAtFixedRate(() -> {
                 tick1s();
                 SwingUtilities.invokeLater(onTick);
@@ -72,7 +72,7 @@ public class TimerApp {
             }
         }
 
-        void shutdown() { // корректно останавливаем поток при удалении панели
+        void shutdown() {
             stop();
             scheduler.shutdownNow();
         }
@@ -175,15 +175,15 @@ public class TimerApp {
     static class TimerPanel extends JPanel {
         private final TimerModel model;
         private final JLabel label;
-        private final JLabel statusLabel;           // NEW: статус под основным текстом
+        private final JLabel statusLabel;
         private final JButton startBtn, stopBtn, resetBtn, deleteBtn;
 
         private final Color baseColor;
         private final Color[] pulseColors = {
-                new Color(33,150,243),  // синий
-                new Color(76,175,80),   // зелёный
-                new Color(244,67,54),   // красный
-                new Color(255,152,0)    // оранжевый
+                new Color(33,150,243),
+                new Color(76,175,80),
+                new Color(244,67,54),
+                new Color(255,152,0)
         };
         private int colorIndex = 0;
 
@@ -200,7 +200,7 @@ public class TimerApp {
             label.setFont(label.getFont().deriveFont(Font.BOLD, 16f));
             baseColor = label.getForeground();
 
-            statusLabel = new JLabel(" "); // пустая строка, чтобы высота была постоянной
+            statusLabel = new JLabel(" ");
             statusLabel.setFont(statusLabel.getFont().deriveFont(Font.PLAIN, 12f));
             statusLabel.setForeground(new Color(120, 120, 120));
 
@@ -233,7 +233,7 @@ public class TimerApp {
             });
 
             deleteBtn.addActionListener(e -> {
-                model.shutdown(); // корректно гасим поток
+                model.shutdown();
                 onDelete.run();
             });
 
@@ -246,7 +246,7 @@ public class TimerApp {
             add(left, BorderLayout.CENTER);
             add(right, BorderLayout.EAST);
 
-            // Подписываемся на события модели
+
             model.setListener(new TimerListener() {
                 @Override public void onColorPulse() {
                     if (model.getType() == TimerType.STANDARD) {
@@ -300,7 +300,7 @@ public class TimerApp {
         }
     }
 
-    // Менеджер таймеров
+
     static class TimerManager {
         private final List<TimerModel> models = new ArrayList<>();
         private final List<TimerPanel> panels = new ArrayList<>();
