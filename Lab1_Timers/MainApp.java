@@ -6,6 +6,7 @@ public class MainApp {
         SwingUtilities.invokeLater(MainApp::createGUI);
     }
 
+
     private static void createGUI() {
         JFrame frame = new JFrame("Timers");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

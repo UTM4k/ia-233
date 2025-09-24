@@ -47,7 +47,6 @@ public class IntervalTimerPanel extends JPanel {
     }
 
     private void startTimer() {
-        // Парсинг и валидация ввода
         try {
             interval = Integer.parseInt(input.getText().trim());
             if (interval <= 0) interval = 3;
