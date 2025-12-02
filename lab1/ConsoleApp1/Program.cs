@@ -197,7 +197,7 @@ class Program
             {
                 case "1":
                     // one-shot after delay
-                    Console.Write("Enter delay (TimeSpan like 'hh:mm:ss' OR plain seconds): ");
+                    Console.Write("Enter delay (TimeSpan like 'hh:mm:ss'): ");
                     var delayText = Console.ReadLine();
                     if (!TryParseTimeSpanOrSeconds(delayText, out TimeSpan delay))
                     {
@@ -214,7 +214,7 @@ class Program
 
                 case "2":
                     // periodic
-                    Console.Write("Enter period (TimeSpan like 'hh:mm:ss' OR plain seconds): ");
+                    Console.Write("Enter period (TimeSpan like 'hh:mm:ss'): ");
                     var periodText = Console.ReadLine();
                     if (!TryParseTimeSpanOrSeconds(periodText, out TimeSpan period))
                     {

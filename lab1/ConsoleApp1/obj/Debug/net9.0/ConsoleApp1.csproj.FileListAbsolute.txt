@@ -1,0 +1,15 @@
+/home/vero/Sync/utm/sem5/so/repo/ia-233/lab1/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1
+/home/vero/Sync/utm/sem5/so/repo/ia-233/lab1/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1.deps.json
+/home/vero/Sync/utm/sem5/so/repo/ia-233/lab1/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1.runtimeconfig.json
+/home/vero/Sync/utm/sem5/so/repo/ia-233/lab1/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1.dll
+/home/vero/Sync/utm/sem5/so/repo/ia-233/lab1/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1.pdb
+/home/vero/Sync/utm/sem5/so/repo/ia-233/lab1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+/home/vero/Sync/utm/sem5/so/repo/ia-233/lab1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.AssemblyInfoInputs.cache
+/home/vero/Sync/utm/sem5/so/repo/ia-233/lab1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.AssemblyInfo.cs
+/home/vero/Sync/utm/sem5/so/repo/ia-233/lab1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.csproj.CoreCompileInputs.cache
+/home/vero/Sync/utm/sem5/so/repo/ia-233/lab1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.sourcelink.json
+/home/vero/Sync/utm/sem5/so/repo/ia-233/lab1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.dll
+/home/vero/Sync/utm/sem5/so/repo/ia-233/lab1/ConsoleApp1/obj/Debug/net9.0/refint/ConsoleApp1.dll
+/home/vero/Sync/utm/sem5/so/repo/ia-233/lab1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.pdb
+/home/vero/Sync/utm/sem5/so/repo/ia-233/lab1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.genruntimeconfig.cache
+/home/vero/Sync/utm/sem5/so/repo/ia-233/lab1/ConsoleApp1/obj/Debug/net9.0/ref/ConsoleApp1.dll
