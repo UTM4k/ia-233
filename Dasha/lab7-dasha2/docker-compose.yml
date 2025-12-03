@@ -1,0 +1,20 @@
+services:
+  web:
+    build: ./web
+    container_name: web
+    ports:
+      - "8080:80"
+    networks:
+      - labnet
+
+  images:
+    build: ./images
+    container_name: images
+    expose:
+      - "80"
+    networks:
+      - labnet
+
+networks:
+  labnet:
+    driver: bridge

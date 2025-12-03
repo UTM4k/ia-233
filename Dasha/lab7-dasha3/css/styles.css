@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f6f6f6;
+  color: #222;
+}
+
+.header img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+header p {
+  margin: 4px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.contacts {
+  text-align: right;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.dob {
+  font-size: 12px;
+  color: #888;
+}
+
+h2 {
+  margin-top: 25px;
+  margin-bottom: 6px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.line {
+  height: 1px;
+  background: #ddd;
+  margin-bottom: 10px;
+}
+
+.about {
+  color: #555;
+  font-size: 14px;
+}
+
+.two-cols {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 35px;
+}
+
+.item {
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+.item-title {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.item-meta {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 6px;
+}
+
+.item-list {
+  margin: 0;
+  padding-left: 18px;
+  color: #444;
+}
+
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.pill {
+  background: #f2f2f2;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 12px;
+  border: 1px solid #e3e3e3;
+}
+
+.lang-wrapper {
+  overflow-x: auto;
+}
+
+.lang-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  min-width: 450px;
+}
+
+.lang-table th {
+  text-align: left;
+  color: #666;
+  font-size: 12px;
+  padding: 6px 4px;
+}
+
+.lang-table td {
+  padding: 6px 4px;
+  border-top: 1px solid #eee;
+}
+
+@media (max-width: 750px) {
+  .two-cols {
+    grid-template-columns: 1fr;
+  }
+  .contacts {
+    text-align: left;
+    margin-top: 12px;
+  }
+}
